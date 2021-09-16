@@ -5,12 +5,13 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 # Create your views here.
-api_view(['GET'])
+@api_view(['GET'])
 def apiOverview(request):
     api_urls = {
         'List':'/task-list/',
         'Detail View':'/task-detail/<str:pk>/',
         'Create': '/task-create/',
-        'Update': '/task-Update/',
+        'Update': '/task-Update/<str:pk>/',
+        'Delete': '/task-delete/<str:pk>/',
     }
-    return Response('API BASE POINT', safe = False)
+    return Response(api_urls)
