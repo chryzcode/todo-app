@@ -80,10 +80,23 @@ WSGI_APPLICATION = 'drf_todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dc523v8v6jefru',
+        'USER': 'squckbihzauhek',
+        'PASSWORD': 'fff1df6ec73b557d3c75c2a6d64765e056ee63b3a35bd5198f6fd78a3d987d16',
+        'HOST': 'ec2-44-199-26-122.compute-1.amazonaws.com',
+        'POST': '5432',
     }
 }
 
@@ -136,3 +149,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 django_heroku.settings(locals())
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+]
