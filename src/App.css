@@ -62,5 +62,5 @@ input {
 }
 
 .task-wrapper:hover {
-  background-color: aqua;
+  background-color: rgb(200, 209, 209);;
 }
