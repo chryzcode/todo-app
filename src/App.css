@@ -34,8 +34,8 @@ input {
   position: -webkit-sticky;
   position: sticky;
   top: 0rem;
-  /* border: 2px solid #fff;
-  border-bottom: 0.1px solid rgb(228, 228, 228); */
+  border: 2px solid #fff;
+  border-bottom: 0.1px solid rgb(228, 228, 228);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding: 40px;
